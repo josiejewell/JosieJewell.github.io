@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font: 20px/1.618 sans-serif;
+    color: black;
+}
+
+body {
+    background-color: navy;
+}
+
+/* Style the navigation menu */
+
+.topnav {
+    overflow: hidden;
+    background-color: navy;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+
+.topnav a {
+    color: gold;
+    padding: 10px 17px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: navy;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Add a grey background color on mouse-over */
+
+.topnav a:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+
+.active {
+    background-color: navy;
+    color: black;
+}
+
+.hero-image {
+    height: 90%;
+    widows: 100%;
+    margin: 0;
+}
+
+.hero-image::before {
+    background-image: url("mapfregoal.JPG");
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    opacity: 0.4;
+}
+
+.hero-image::after {
+    background-color: lightskyblue;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    opacity: 0.5;
+}
+
+.row {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#profile {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+    padding-right: 2rem;
+    /* border-left: solid black; */
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 25rem;
+    padding-top: 9.5rem;
+    color: white;
+}
+
+footer {
+    color: yellow;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 97%;
+    position: absolute;
+}
+
+#photos {
+    background-color: navy;
+    text-align: center;
+    position: relative;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.hero-image__sociallinks li a {
+    display: flex;
+    justify-content: center;
+    padding-left: .6rem;
+}
+
+.hero-image__sociallinks {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 3rem;
+}
+/* #collage{
+    width: 95%;
+    text-align:center; 
+    
+} */
+.collage-columns{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 5rem;
+    
+}

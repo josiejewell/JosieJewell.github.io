@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Josselyn Jewell</title>
+  <link rel="stylesheet" type="text/css" href="resources/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="resources/ism/css/my-slider.css" />
+  <script src="resources/ism/js/ism-2.2.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active"><img src="resources/gales logo.png" height="45px" width="50px" />
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#about">About Me</a>
+          <a href="#container">Sports Photos</a>
+          <a href="#collage">Other Photos</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+  </header>
+  <div class="hero-image">
+    <div class="row">
+      <div class="column">
+        <section class="column1">
+          <h1>Josselyn Jewell</h1>
+          <nav class="hero-image__nav">
+            <ul class="hero-image__sociallinks">
+              <li class="hero-image__sociallinks-item"><a href="mailto:josselyn.jewell@icloud.com" target="_blank"><img
+                    src="resources/gmail32.png" height=40 width=30></a></li>
+              <li class="hero-image__sociallinks-item"><a href="https://www.linkedin.com/in/josselyn-jewell-1b0b24175/"
+                  target="_blank"><img src="resources/linkedin28.png" height=30 width=40></a></li>
+            </ul>
+          </nav>
+          <!-- <h2>Lady Gales</h2> -->
+        </section>
+      </div>
+      <div class="column">
+
+        <a id="profile"><img src="resources/josiecircle.png" alt="picture of Josie in front of brick wall"
+            height="400px" width="350px"></a>
+      </div>
+    </div>
+
+  </div>
+  <div id="container">
+    <div class="ism-slider" data-play_type="loop" id="Josie">
+      <ol>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551043124052_385782.jpg">
+          <div class="ism-caption ism-caption-1" data-delay='200'>Josselyn #12, <br>Sophomore</div>
+        </li>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551044253864_96820.jpg">
+        </li>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551043517307_265228.jpg">
+          <div class="ism-caption ism-caption-0">Josselyn #13, Freshman<br>@Mapfre Columbus Crew<br>Stadium</div>
+        </li>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551043998421_474559.jpg">
+          <div class="ism-caption ism-caption-0">Lancaster Lady Gales<br>2018</div>
+        </li>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551044528484_89711.jpg">
+          <div class="ism-caption ism-caption-0">LHS 1rst Game on Turf<br>1-0 Win vs. Fairfield Union<br>Josselyn nets
+            game winner</div>
+        </li>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551044898782_767200.jpg">
+          <div class="ism-caption ism-caption-0">My slide caption text</div>
+        </li>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551045450844_53512.jpg">
+          <div class="ism-caption ism-caption-0">My slide caption text</div>
+        </li>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551045426901_508920.jpg">
+        </li>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551044930351_246896.jpg">
+        </li>
+        <li>
+          <img src="resources/ism/image/slides/_u/1551045178983_570053.jpg">
+          <div class="ism-caption ism-caption-1" data-delay='200'>Josselyn #8<br>LSSA Club</div>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div id="collage">
+    <ol class="collage-columns">
+      <li><img src="resources/collage1.jpg" height="700px" width="500px"/></li>
+      <li><img src="resources/collage2.jpg" height="700px" width="500px"/></li>
+  
+    </ol>
+  </div>
+  <div id="photos">
+    <img src="resources/gales logo.png">
+  </div>
+  <footer>
+    <small> &copy; Jim Jewell </small>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>
